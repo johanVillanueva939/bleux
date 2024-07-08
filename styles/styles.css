@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --drak-violet:#1e172f;
+    --section-one:#2e2550;
+    --pink:#f41587;
+}
+/*header*/
+header{
+    background-color: var(--drak-violet);
+    color: white;
+    padding: 1rem;
+    }
