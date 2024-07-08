@@ -1,14 +1,142 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
 }
 :root{
 	--drak-violet:#1e172f;
 	--section-one:#2e2550;
 	--pink:#f41587;
+	--pink-tranparent:#f4158885;
+}
+body{
+	background: whitesmoke;
+}
+button{
+	cursor: pointer;
+	transition: .18s;
 }
 /*header*/
 header{
 	background-color: var(--drak-violet);
 	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+.nav_sect{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#nav_id{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+a{
+	text-decoration: none;
+	color: rgba(245, 245, 245, 0.856);
+	font-weight: bold;
+	font-size: 17px;
+}
+.nav_sect>button{
+	background: linear-gradient(90deg, #ae00ff, #03a9f4);
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 3px;
+}
+.nav_sect>button:active{
+	background: linear-gradient(90deg, #03a9f4, #ae00ff);
+}
+/*section one*/
+.section1{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color: whitesmoke;
+}
+.section1> section:nth-child(1){
+	background-color: var(--section-one);
+}
+.section1> section:nth-child(1)> div {
+	position: relative;
+	left: 35%;
+	top: 40%;
+}
+.section1> section:nth-child(1)> div > h1{
+	font-size: 80px;
+	width: 50px;
+}
+.section1> section:nth-child(1)> div > p{
+	font-size: 20px;
+	width: 450px;
+}
+.section1> section:nth-child(1)> div > button:nth-child(1){
+	background-color: whitesmoke;
+	color: var(--pink);
+	border: none;
+	padding: 12px 25px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+.section1> section:nth-child(1)> div > button:nth-child(1):active{
+	background-color: var(--pink-tranparent);
+	color: whitesmoke;
+	box-shadow: 10px 10px 10px var(--drak-violet);
+}
+.section1> section:nth-child(1)> div >button:nth-child(2){
+	background-color: transparent;
+	color: whitesmoke;
+	padding: 10px 35px;
+	outline: none;
+	border: solid 2px whitesmoke;
+	border-radius: 3px;
+	font-weight: bold;
+}
+.section1> section:nth-child(1)> div > button:nth-child(2):active{
+	background-color: rgba(245, 245, 245, 0.63);
+	color: var(--section-one);
+	box-shadow: 10px 10px 10px var(--drak-violet);
+}
+
+.section1> section:nth-child(1)> div:nth-child(2){
+	border: solid 2px rgba(255, 255, 255, 0.185);
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 5px;
+	width:fit-content;
+}
+.section1> section:nth-child(2){
+	background: url(../assets/images/hojasFondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(50%);
+	height: 80vh;
+}
+.section1> section:nth-child(2)> img{
+	position: relative;
+	left:20%;
+	top:12%;
+	filter: contrast(1.4);
+}
+/* Section 2 */
+.section2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2%;
+	font-size: 50px;
+}
+.section2 > section{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 5%;
+}
+.section2>section> section:nth-child(2)>section{
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	align-items: center;
+	line-height: 20px;
 }
