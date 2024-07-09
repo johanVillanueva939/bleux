@@ -21,6 +21,9 @@ button{
 	cursor: pointer;
 	transition: .18s;
 }
+p{
+	width: fit-content;
+}
 /*header*/
 header{
 	background-color: var(--drak-violet);
@@ -185,4 +188,42 @@ a{
 .section2>section> section:nth-child(2)>section> div:nth-child(1){
 	color: var(--pink);
 	font-size: 25px;
+}
+/* Section 3 */
+.section3{
+	background-color: var(--drak-violet);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3% 0;
+}
+.section3 > h2{
+	font-size: 50px;
+	color: whitesmoke;
+}
+.section3 > p{
+	color: gray;
+	width: 600px;
+	font-size: 15px;
+	text-align: center;
+}
+.section3 > section{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	padding: 3% 10%;
+}
+.section3 > section > section{
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.section3 > section > section > section:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.section3 > section > section > section:nth-child(1) > img{
 }
