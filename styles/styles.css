@@ -8,9 +8,14 @@
 	--section-one:#2e2550;
 	--pink:#f41587;
 	--pink-tranparent:#f4158885;
+	--pink-dark:#c95590;
+}
+::selection{
+	background: var(--pink);
+	color: #F1F2F7;
 }
 body{
-	background: whitesmoke;
+	background: #F1F2F7;
 }
 button{
 	cursor: pointer;
@@ -61,11 +66,11 @@ a{
 .section1> section:nth-child(1)> div {
 	position: relative;
 	left: 35%;
-	top: 40%;
+	top: 25%;
 }
 .section1> section:nth-child(1)> div > h1{
 	font-size: 80px;
-	width: 50px;
+	width: 315px;
 }
 .section1> section:nth-child(1)> div > p{
 	font-size: 20px;
@@ -111,13 +116,14 @@ a{
 	background-size: cover;
 	background-repeat: no-repeat;
 	filter: grayscale(50%);
-	height: 80vh;
+	height: auto;
+	padding-bottom: 6%;
 }
 .section1> section:nth-child(2)> img{
-	position: relative;
-	left:20%;
-	top:12%;
+	padding-top: 10%;
+	padding-left: 20%;
 	filter: contrast(1.4);
+	width: 250px;
 }
 /* Section 2 */
 .section2{
@@ -125,18 +131,58 @@ a{
 	flex-direction: column;
 	align-items: center;
 	padding-top: 2%;
+	justify-content: center;
+}
+.section2> h2{
+	color: var(--pink);
 	font-size: 50px;
 }
 .section2 > section{
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	justify-content: center;
 	align-items: center;
-	padding-top: 5%;
+	grid-template-columns: repeat(2,1fr);
+	padding: 5% 0;
+	gap: 6%;
+	width: fit-content;
+}
+.section2> section>section:nth-child(1){
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.section2> section>section:nth-child(1)>img{
+	width: 70%;
+}
+.section2>section> section:nth-child(2){
+	color:rgb(85, 85, 85);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.section2>section> section:nth-child(2)>p:nth-child(1){
+	font-size: 40px;
+	color: var(--pink-dark);
+	width:fit-content;
+	padding-bottom: 20px;
+}
+.section2>section> section:nth-child(2)>p:nth-child(2){
+	width: 330px;
+	font-size: 17px;
+}
+.section2>section> section:nth-child(2)>p:nth-child(3){
+	color: var(--pink);
+	font-size: 22px;
+	padding: 20px 0;
 }
 .section2>section> section:nth-child(2)>section{
 	display: flex;
 	flex-direction: row;
-	padding-top: 20px;
 	align-items: center;
 	line-height: 20px;
+	color: rgb(85, 85, 85);
+}
+.section2>section> section:nth-child(2)>section> div:nth-child(1){
+	color: var(--pink);
+	font-size: 25px;
 }
