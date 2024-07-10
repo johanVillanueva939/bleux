@@ -69,17 +69,23 @@ a{
 	background-color: var(--section-one);
 }
 .section1> section:nth-child(1)> div {
-	position: relative;
-	left: 35%;
-	top: 25%;
+	margin-left: 32%;
+	margin-top: 25%;
+	margin-right: 3%;
 }
 .section1> section:nth-child(1)> div > h1{
 	font-size: 80px;
-	width: 315px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 315px;
+	min-width: 50px;
 }
 .section1> section:nth-child(1)> div > p{
 	font-size: 20px;
-	width: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 450px;
+	min-width: 50px;
 }
 .section1> section:nth-child(1)> div > button:nth-child(1){
 	background-color: whitesmoke;
@@ -114,6 +120,9 @@ a{
 	margin-top: 10px;
 	border-radius: 5px;
 	width:fit-content;
+	display: flex;
+	flex-wrap: wrap	;
+	gap: 5px;
 }
 .section1> section:nth-child(2){
 	background: url(../assets/images/hojasFondo.jpg);
@@ -243,7 +252,7 @@ a{
 	align-items: center;
 	background-color: white;
 	padding: 2% 0;
-	border-radius: 3px 3px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 .section3 > section > section > div:nth-child(1) > img{
 	filter: grayscale(100%);
@@ -278,7 +287,6 @@ a{
 	display: flex;
 	flex-direction: row;
 	line-height: 45px;
-	
 	justify-content: start;
 	background-color: white;
 	text-shadow: .5px .2px 1px black;
@@ -291,13 +299,15 @@ a{
 .section3 > section > section > div:nth-child(4){
 	background-color: white;
 	color: rgb(153, 153, 153);
+	display: flex;
+	justify-content: center
 }
 .section3 > section > section > div:nth-child(4) > p{
-	width: 300px;
+	width: 250px;
 }
 .section3 > section > section > div:nth-child(5){
 	background-color: var(--white-gray);
-	border-radius:0 0 3px 3px;
+	border-radius:0 0 5px 5px;
 }
 .section3 > section > section > div:nth-child(5)>button{
 	background-color: var(--drak-violet);
@@ -330,6 +340,72 @@ a{
 	text-shadow: .5px 0 .7px black; 
 }
 .section3 > section > section:hover > div:nth-child(5) button{
-	background: linear-gradient(20deg, #ffb6de,#fa77bb,#ff68b6,#f85eae, var(--pink));
+	background: linear-gradient(20deg, #ffb6de,#fa77bb,#ff68b6,#f85eae, #f41587);
 	transform: scale(1.07);
 }
+/* Footer */
+footer{
+	background-color: var(--white-gray);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: .5% 0;
+}
+footer > div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 15px;
+	color: rgb(59, 59, 59);
+	text-align: center;
+	flex-wrap: wrap;
+}
+footer > div:nth-child(1) > p:nth-child(2){
+	color: var(--pink);
+	font-weight: bold;
+}
+footer>div:nth-child(2){
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 15px;
+}
+footer>div:nth-child(2) > i:hover{
+	color: var(--pink);
+	cursor:crosshair;
+}
+/* --------------------------Media Query-------------------------- */
+@media screen and (max-width:980px) {
+	.section3 > section{
+		display: grid;
+		gap: 15px;
+	}
+}
+@media screen and (max-width:935px) {
+	.section3 > section{
+		display: grid;
+		gap: 5px;
+	}
+	.section1> section:nth-child(1)> div:nth-child(2){
+		display: flex;
+		flex-direction: column;
+	
+	}
+}
+@media screen and (max-width:910px) {
+	.section3 > section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.section3 > section > section:nth-child(1){
+		padding: 17.5px;
+		width: fit-content;
+	}
+	.section3 > section > section:nth-child(2),.section3 > section > section:nth-child(3){
+		width: fit-content;
+		padding: 17.5px;
+	}
+
+}
+
