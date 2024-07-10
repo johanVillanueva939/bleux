@@ -59,7 +59,7 @@ a{
 .nav_sect>button:active{
 	background: linear-gradient(90deg, #03a9f4, #ae00ff);
 }
-/*section one*/
+/*---------------section one---------------*/
 .section1{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -142,7 +142,7 @@ a{
 .section1> section:nth-child(2)> img:hover{
 	transform: scale(1.02);
 }
-/* Section 2 */
+/* ---------------Section 2--------------- */
 .section2{
 	display: flex;
 	flex-direction: column;
@@ -188,9 +188,21 @@ a{
 	padding-bottom: 20px;
 }
 .section2>section> section:nth-child(2)>p:nth-child(2){
-	width: 330px;
+	max-width: 330px;
+	min-width: 200px;
+	flex-wrap: wrap;
 	font-size: 17px;
 }
+/* hshdjkfsdf
+sf
+sd
+f
+sd
+f
+sdf
+sd
+feBlendsdf
+s */
 .section2>section> section:nth-child(2)>p:nth-child(3){
 	color: var(--pink);
 	font-size: 22px;
@@ -207,7 +219,7 @@ a{
 	color: var(--pink);
 	font-size: 25px;
 }
-/* Section 3 */
+/* ---------------Section 3--------------- */
 .section3{
 	background-color: var(--drak-violet);
 	display: flex;
@@ -221,9 +233,12 @@ a{
 }
 .section3 > p{
 	color: gray;
-	width: 600px;
+	min-width: 200px;
+	max-width: 600px;
 	font-size: 15px;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
 }
 .section3 > section{
 	display: grid;
@@ -343,7 +358,7 @@ a{
 	background: linear-gradient(20deg, #ffb6de,#fa77bb,#ff68b6,#f85eae, #f41587);
 	transform: scale(1.07);
 }
-/* Footer */
+/* ---------------Footer--------------- */
 footer{
 	background-color: var(--white-gray);
 	display: flex;
@@ -375,13 +390,13 @@ footer>div:nth-child(2) > i:hover{
 	cursor:crosshair;
 }
 /* --------------------------Media Query-------------------------- */
-@media screen and (max-width:980px) {
+@media screen and (max-width:980px){
 	.section3 > section{
 		display: grid;
 		gap: 15px;
 	}
 }
-@media screen and (max-width:935px) {
+@media screen and (max-width:935px){
 	.section3 > section{
 		display: grid;
 		gap: 5px;
@@ -392,7 +407,7 @@ footer>div:nth-child(2) > i:hover{
 	
 	}
 }
-@media screen and (max-width:910px) {
+@media screen and (max-width:910px){
 	.section3 > section{
 		display: flex;
 		flex-wrap: wrap;
@@ -406,6 +421,86 @@ footer>div:nth-child(2) > i:hover{
 		width: fit-content;
 		padding: 17.5px;
 	}
-
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 70px;
+		max-width: 180px;
+	}
+	.section1> section:nth-child(1)> div > p{
+		font-size: 15px;
+	}
 }
-
+@media screen and (max-width:810px){
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 70px;
+	}
+}
+@media screen and (max-width:800px){
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 65px;
+	}
+}
+@media screen and (max-width:750px){
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 55px;
+	}
+	a{
+		font-size: 15px;
+	}
+	.section1> section:nth-child(2)> img{
+		width: 230px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(1){
+		font-size: 30px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(2){
+		font-size: 13px;
+	}
+}
+@media screen and (max-width:620px){
+	#nav_id{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		gap: 5px;
+	}
+	a{
+		font-size: 14px;
+	}
+	.nav_sect>button{
+		padding: 12px 15px;
+	}
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 45px;
+	}
+	.section1> section:nth-child(1)> div > button:nth-child(1),	.section1> section:nth-child(1)> div > button:nth-child(2){
+		padding: 8px 12px;
+	}
+	.section1> section:nth-child(2)> img{
+		width: 200px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(1){
+		font-size: 25px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(2){
+		font-size: 12px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(3){
+		font-size: 17px;
+	}
+	.section2>section> section:nth-child(2)>section> div:nth-child(1){
+		font-size: 11px;
+	}
+	.section2>section> section:nth-child(2)>section> div:nth-child(2){
+		font-size: 11px;
+	}
+}
+@media screen and (max-width:500px){
+	a{
+		font-size: 12px;
+	}
+	.nav_sect>button{
+		padding: 10px 12px;
+	}
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 40px;
+	}
+}
