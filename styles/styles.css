@@ -9,7 +9,7 @@
 	--pink:#f41587;
 	--pink-tranparent:#f4158885;
 	--pink-dark:#c95590;
-	--white-gray:#f5f5f5a1;
+	--white-gray:#F5F5F5;
 }
 ::selection{
 	background: var(--pink);
@@ -199,89 +199,8 @@ a{
 }
 /* Section 3 */
 .section3{
+	display: flex;
+	flex-direction: column;
 	background-color: var(--drak-violet);
-	display: flex;
-	flex-direction: column;
 	align-items: center;
-	padding: 3% 0;
-}
-.section3 > h2{
-	font-size: 50px;
-	color: whitesmoke;
-}
-.section3 > p{
-	color: gray;
-	width: 600px;
-	font-size: 15px;
-	text-align: center;
-}
-.section3 > section{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 30px;
-	padding: 3% 10%;
-}
-.section3 > section > section{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	width: fit-content;
-	border-radius: 50px;
-	padding-left: 45%;
-}
-.section3 > section > section > section{
-	width: 100%;
-}
-.section3 > section > section > section:nth-child(1){
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: whitesmoke;
-	padding: 0 5%;
-}
-.section3 > section > section > section:nth-child(1) > img{
-	filter: grayscale(100%);
-	transition: .15s;
-}
-.section3 > section > section:hover > section:nth-child(1) img {
-	filter: grayscale(0%);
-}
-.section3 > section > section > section:nth-child(1) > p{
-	font-size: 20px;
-	font-weight: bold;
-}
-.section3 > section > section > section:nth-child(2){
-	background-color: var(--white-gray);
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 4% 5%;
-}
-.section3 > section > section > section:nth-child(2) > p:nth-child(1){
-	font-size: 30px;
-}
-.section3 > section > section > section:nth-child(2) > p:nth-child(2){
-	font-size: 40px;
-}
-.section3 > section > section > section:nth-child(2) > p:nth-child(3){
-	font-size: 13px;
-	font-weight: lighter;
-}
-.section3 > section > section > section:nth-child(3){
-	display: flex;
-	flex-direction: row;
-	line-height: 45px;
-	padding: 5% 5%;
-	justify-content: start;
-	background-color: whitesmoke;
-	text-shadow: .5px .2px 1px black;
-}
-.section3 > section > section > section:nth-child(3)>div:nth-child(1){
-	padding-right:10%;
-	padding-left: 5%;
-	font-size: 20px;
-}
-.section3 > section > section:hover p {
-	color: var(--pink); 
 }
