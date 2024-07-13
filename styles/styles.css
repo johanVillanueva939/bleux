@@ -9,7 +9,7 @@
 	--pink:#f41587;
 	--pink-tranparent:#f4158885;
 	--pink-dark:#c95590;
-	--white-gray:#F5F5F5;
+	--white-gray:#f5f5f5;
 }
 ::selection{
 	background: var(--pink);
@@ -24,6 +24,7 @@ button{
 }
 p{
 	width: fit-content;
+	transition: .18s;
 }
 /*header*/
 header{
@@ -58,7 +59,7 @@ a{
 .nav_sect>button:active{
 	background: linear-gradient(90deg, #03a9f4, #ae00ff);
 }
-/*section one*/
+/*---------------section one---------------*/
 .section1{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -68,17 +69,23 @@ a{
 	background-color: var(--section-one);
 }
 .section1> section:nth-child(1)> div {
-	position: relative;
-	left: 35%;
-	top: 25%;
+	margin-left: 32%;
+	margin-top: 25%;
+	margin-right: 3%;
 }
 .section1> section:nth-child(1)> div > h1{
 	font-size: 80px;
-	width: 315px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 315px;
+	min-width: 50px;
 }
 .section1> section:nth-child(1)> div > p{
 	font-size: 20px;
-	width: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 450px;
+	min-width: 50px;
 }
 .section1> section:nth-child(1)> div > button:nth-child(1){
 	background-color: whitesmoke;
@@ -113,6 +120,9 @@ a{
 	margin-top: 10px;
 	border-radius: 5px;
 	width:fit-content;
+	display: flex;
+	flex-wrap: wrap	;
+	gap: 5px;
 }
 .section1> section:nth-child(2){
 	background: url(../assets/images/hojasFondo.jpg);
@@ -132,7 +142,7 @@ a{
 .section1> section:nth-child(2)> img:hover{
 	transform: scale(1.02);
 }
-/* Section 2 */
+/* ---------------Section 2--------------- */
 .section2{
 	display: flex;
 	flex-direction: column;
@@ -178,9 +188,21 @@ a{
 	padding-bottom: 20px;
 }
 .section2>section> section:nth-child(2)>p:nth-child(2){
-	width: 330px;
+	max-width: 330px;
+	min-width: 200px;
+	flex-wrap: wrap;
 	font-size: 17px;
 }
+/* hshdjkfsdf
+sf
+sd
+f
+sd
+f
+sdf
+sd
+feBlendsdf
+s */
 .section2>section> section:nth-child(2)>p:nth-child(3){
 	color: var(--pink);
 	font-size: 22px;
@@ -197,10 +219,288 @@ a{
 	color: var(--pink);
 	font-size: 25px;
 }
-/* Section 3 */
+/* ---------------Section 3--------------- */
 .section3{
 	display: flex;
 	flex-direction: column;
 	background-color: var(--drak-violet);
 	align-items: center;
+	padding: 3% 0;
+}
+.section3 > h2{
+	font-size: 50px;
+	color: whitesmoke;
+}
+.section3 > p{
+	color: gray;
+	min-width: 200px;
+	max-width: 600px;
+	font-size: 15px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+.section3 > section{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	width: fit-content;
+	gap: 30px;
+}
+.section3 > section > section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	border-radius: 50px;
+	padding-left: 45%;
+	justify-content: center;
+	padding: 5% 0;
+}
+.section3 > section > section > div{
+	width: 300px;
+	padding: 5% 0;
+}
+.section3 > section > section > div:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 2% 0;
+	border-radius: 5px 5px 0 0;
+}
+.section3 > section > section > div:nth-child(1) > img{
+	filter: grayscale(100%);
+	transition: .18s;
+}
+.section3 > section > section:hover > div:nth-child(1) img {
+	filter: grayscale(0%);
+	transform: scale(1.07);
+}
+.section3 > section > section > div:nth-child(1) > p{
+	font-size: 20px;
+	font-weight: bold;
+}
+.section3 > section > section > div:nth-child(2){
+	background-color: var(--white-gray);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 4% 0%;
+}
+.section3 > section > section > div:nth-child(2) > p:nth-child(1){
+	font-size: 30px;
+}
+.section3 > section > section > div:nth-child(2) > p:nth-child(2){
+	font-size: 40px;
+}
+.section3 > section > section > div:nth-child(2) > p:nth-child(3){
+	font-size: 13px;
+	font-weight: lighter;
+}
+.section3 > section > section > div:nth-child(3){
+	display: flex;
+	flex-direction: row;
+	line-height: 45px;
+	justify-content: start;
+	background-color: white;
+	text-shadow: .5px .2px 1px black;
+}
+.section3 > section > section > div:nth-child(3)>div:nth-child(1){
+	padding-right:10%;
+	padding-left: 5%;
+	font-size: 20px;
+}
+.section3 > section > section > div:nth-child(4){
+	background-color: white;
+	color: rgb(153, 153, 153);
+	display: flex;
+	justify-content: center
+}
+.section3 > section > section > div:nth-child(4) > p{
+	width: 250px;
+}
+.section3 > section > section > div:nth-child(5){
+	background-color: var(--white-gray);
+	border-radius:0 0 5px 5px;
+}
+.section3 > section > section > div:nth-child(5)>button{
+	background-color: var(--drak-violet);
+	color: white;
+	padding: 10px 15px;
+	border-radius: 3px;
+	border: none;
+}
+.section3 > section > section:hover > div:nth-child(1) p {
+	color: var(--pink); 
+}
+.section3 > section > section:hover > div:nth-child(3)> div:nth-child(1) p:nth-child(1) {
+	color: var(--pink);
+	transform:scale(1.07);
+	text-shadow: .5px 0 .7px black; 
+}
+.section3 > section > section:hover > div:nth-child(3)> div:nth-child(1) p:nth-child(2) {
+	color: var(--pink);
+	transform:scale(1.07);
+	text-shadow: .5px 0 .7px black; 
+}
+.section3 > section > section:hover > div:nth-child(3)> div:nth-child(1) p:nth-child(3) {
+	color: var(--pink);
+	transform:scale(1.07);
+	text-shadow: .5px 0 .7px black; 
+}
+.section3 > section > section:hover > div:nth-child(3)> div:nth-child(1) p:nth-child(4) {
+	color: var(--pink);
+	transform:scale(1.07);
+	text-shadow: .5px 0 .7px black; 
+}
+.section3 > section > section:hover > div:nth-child(5) button{
+	background: linear-gradient(20deg, #ffb6de,#fa77bb,#ff68b6,#f85eae, #f41587);
+	transform: scale(1.07);
+}
+/* ---------------Footer--------------- */
+footer{
+	background-color: var(--white-gray);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: .5% 0;
+}
+footer > div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 15px;
+	color: rgb(59, 59, 59);
+	text-align: center;
+	flex-wrap: wrap;
+}
+footer > div:nth-child(1) > p:nth-child(2){
+	color: var(--pink);
+	font-weight: bold;
+}
+footer>div:nth-child(2){
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 15px;
+}
+footer>div:nth-child(2) > i:hover{
+	color: var(--pink);
+	cursor:crosshair;
+}
+/* --------------------------Media Query-------------------------- */
+@media screen and (max-width:980px){
+	.section3 > section{
+		display: grid;
+		gap: 15px;
+	}
+}
+@media screen and (max-width:935px){
+	.section3 > section{
+		display: grid;
+		gap: 5px;
+	}
+	.section1> section:nth-child(1)> div:nth-child(2){
+		display: flex;
+		flex-direction: column;
+	
+	}
+}
+@media screen and (max-width:910px){
+	.section3 > section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.section3 > section > section:nth-child(1){
+		padding: 17.5px;
+		width: fit-content;
+	}
+	.section3 > section > section:nth-child(2),.section3 > section > section:nth-child(3){
+		width: fit-content;
+		padding: 17.5px;
+	}
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 70px;
+		max-width: 180px;
+	}
+	.section1> section:nth-child(1)> div > p{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:810px){
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 70px;
+	}
+}
+@media screen and (max-width:800px){
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 65px;
+	}
+}
+@media screen and (max-width:750px){
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 55px;
+	}
+	a{
+		font-size: 15px;
+	}
+	.section1> section:nth-child(2)> img{
+		width: 230px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(1){
+		font-size: 30px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(2){
+		font-size: 13px;
+	}
+}
+@media screen and (max-width:620px){
+	#nav_id{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		gap: 5px;
+	}
+	a{
+		font-size: 14px;
+	}
+	.nav_sect>button{
+		padding: 12px 15px;
+	}
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 45px;
+	}
+	.section1> section:nth-child(1)> div > button:nth-child(1),	.section1> section:nth-child(1)> div > button:nth-child(2){
+		padding: 8px 12px;
+	}
+	.section1> section:nth-child(2)> img{
+		width: 200px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(1){
+		font-size: 25px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(2){
+		font-size: 12px;
+	}
+	.section2>section> section:nth-child(2)>p:nth-child(3){
+		font-size: 17px;
+	}
+	.section2>section> section:nth-child(2)>section> div:nth-child(1){
+		font-size: 11px;
+	}
+	.section2>section> section:nth-child(2)>section> div:nth-child(2){
+		font-size: 11px;
+	}
+}
+@media screen and (max-width:500px){
+	a{
+		font-size: 12px;
+	}
+	.nav_sect>button{
+		padding: 10px 12px;
+	}
+	.section1> section:nth-child(1)> div > h1{
+		font-size: 40px;
+	}
 }
