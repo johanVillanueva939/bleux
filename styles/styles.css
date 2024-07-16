@@ -63,7 +63,7 @@ a{
 .section1{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	color: whitesmoke;
+	color: #ff00008f;
 }
 .section1> section:nth-child(1){
 	background-color: var(--section-one);
@@ -193,16 +193,6 @@ a{
 	flex-wrap: wrap;
 	font-size: 17px;
 }
-/* hshdjkfsdf
-sf
-sd
-f
-sd
-f
-sdf
-sd
-feBlendsdf
-s */
 .section2>section> section:nth-child(2)>p:nth-child(3){
 	color: var(--pink);
 	font-size: 22px;
