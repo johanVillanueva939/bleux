@@ -63,7 +63,7 @@ a{
 .section1{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	color: #ff00008f;
+	color: white;
 }
 .section1> section:nth-child(1){
 	background-color: var(--section-one);
@@ -347,7 +347,7 @@ a{
 	text-shadow: .5px 0 .7px black; 
 }
 .section3 > section > section:hover > div:nth-child(5) button{
-	background: linear-gradient(20deg, #ffb6de,#fa77bb,#ff68b6,#f85eae, #f41587);
+	background: linear-gradient(20deg, #fb8ac8,#fa5aac,#fb40a0,#fa2492, #fc0685);
 	transform: scale(1.07);
 }
 /* ---------------Footer--------------- */
